@@ -5,9 +5,12 @@ import {Button} from 'react-native-elements'
 export default function DetailsScreen({navigation}) {
     return (
       <View style={styles.container}>
-            <Text style = {styles.titleText}> 
-              Details Screen
-            </Text>
+          <Text style = {styles.titleText}> 
+            Details Screen
+          </Text>
+          <Button title = "Click Here!" 
+          onPress = {() => alert('Button Clicked!')}
+          style = {styles.button}/>
       </View>
     )
   }

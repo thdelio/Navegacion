@@ -9,9 +9,9 @@ export default function HomeScreen({navigation}) {
         <Text style = {styles.titleText}> 
           Home Screen 
         </Text> 
-        {/* <Button title = "ir a la pantalla de detalles" 
-        onPress = {() => navigation.navigate("Details")}
-        style = {styles.button}/> */}
+        <Button title = "Click Here!" 
+        onPress = {() => alert('Button Clicked!')}
+        style = {styles.button}/>
       </View>
     )
   }
