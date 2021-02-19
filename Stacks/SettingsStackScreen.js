@@ -5,31 +5,31 @@ import Icon from 'react-native-vector-icons/Ionicons'
 import {createDrawerNavigator} from '@react-navigation/drawer'
 import {createStackNavigator} from '@react-navigation/stack'
 import DetailsScreen from './../screens/DetailsScreen'
+import SettingsScreen from './../screens/SettingScreen'
+import SettingScreen from './../screens/SettingScreen';
 
-const Stack = createStackNavigator()
-const Drawer = createDrawerNavigator()
-const DetailsStack = createStackNavigator();
-const HomeStack = createStackNavigator();
+const SettingStack = createStackNavigator();
 
-export default function DetailsStackScreen ({navigation}) {
+
+export default function SettingStackScreen ({navigation}) {
     return (
-      <DetailsStack.Navigator screenOptions = {{
+      <SettingStack.Navigator screenOptions = {{
         headerStyle: {
-          backgroundColor: "#9e0059"
+          backgroundColor: "#641220"
         }, headerTitleStyle: {
           fontWeight: 'bold'
         }, headerTintColor: '#fff',
         headerTitleAlign: 'center'
       }}> 
-        <DetailsStack.Screen name = "Details" component = {DetailsScreen} options = {{
+        <SettingStack.Screen name = "Settings" component = {SettingScreen} options = {{
           headerLeft: () => (
-            <Icon.Button name="ios-menu" size = {25} backgroundColor = "#9e0059"
+            <Icon.Button name="ios-menu" size = {25} backgroundColor = "#641220"
             onPress = {() => {navigation.openDrawer()}}>
               
             </Icon.Button>
           )
         }}
         />
-      </DetailsStack.Navigator>
+      </SettingStack.Navigator>
     )
   }

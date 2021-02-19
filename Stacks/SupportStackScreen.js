@@ -5,31 +5,30 @@ import Icon from 'react-native-vector-icons/Ionicons'
 import {createDrawerNavigator} from '@react-navigation/drawer'
 import {createStackNavigator} from '@react-navigation/stack'
 import DetailsScreen from './../screens/DetailsScreen'
+import SupportScreen from './../screens/SupportScreen'
 
-const Stack = createStackNavigator()
-const Drawer = createDrawerNavigator()
-const DetailsStack = createStackNavigator();
-const HomeStack = createStackNavigator();
+const SupportStack = createStackNavigator();
 
-export default function DetailsStackScreen ({navigation}) {
+
+export default function SupportStackScreen ({navigation}) {
     return (
-      <DetailsStack.Navigator screenOptions = {{
+      <SupportStack.Navigator screenOptions = {{
         headerStyle: {
-          backgroundColor: "#9e0059"
+          backgroundColor: "#1d4e89"
         }, headerTitleStyle: {
           fontWeight: 'bold'
         }, headerTintColor: '#fff',
         headerTitleAlign: 'center'
       }}> 
-        <DetailsStack.Screen name = "Details" component = {DetailsScreen} options = {{
+        <SupportStack.Screen name = "Support" component = {SupportScreen} options = {{
           headerLeft: () => (
-            <Icon.Button name="ios-menu" size = {25} backgroundColor = "#9e0059"
+            <Icon.Button name="ios-menu" size = {25} backgroundColor = "#1d4e89"
             onPress = {() => {navigation.openDrawer()}}>
               
             </Icon.Button>
           )
         }}
         />
-      </DetailsStack.Navigator>
+      </SupportStack.Navigator>
     )
   }

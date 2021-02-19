@@ -3,11 +3,11 @@ import { StyleSheet, Text, View, SafeAreaView,StatusBar } from 'react-native';
 import {Button} from 'react-native-elements'
 import Icon from 'react-native-vector-icons'
 
-export default function ProfileScreen() {
+export default function SupportScreen() {
     return (
       <View style={styles.container}>
         <Text style = {styles.titleText}> 
-          Profile Screen
+          Support Screen 
         </Text> 
         <Button title = "Click Here!" 
         onPress = {() => alert('Button Clicked!')}
