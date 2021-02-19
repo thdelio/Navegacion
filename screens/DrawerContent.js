@@ -33,7 +33,7 @@ export function DrawerContent(props) {
                                 <Caption style = {styles.Caption}> Following </Caption>
                             </View>
                             <View style = {styles.section}>
-                                <Paragraph style = {styles.Paragraph}> 150 M </Paragraph>
+                                <Paragraph style = {styles.Paragraph}> 150M </Paragraph>
                                 <Caption style = {styles.Caption}> Followers </Caption>
                             </View>
                         </View>
